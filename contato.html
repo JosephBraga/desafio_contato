@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+  </head>
+  <body>
+    <form action="test.php" method="post">
+      <fieldset>
+        <legend>Entre em contato</legend>
+
+        <label for="assunto">Assunto:</label>
+        <select name="Assunto">
+          <option value="suporte" selected>Suporte</option>
+          <option value="sugestão">Sugestão</option>
+          <option value="reclamação">Reclamação</option></select
+        ><br /><br />
+
+        <label for="nome">Nome:</label>
+        <input
+          type="text"
+          id="nomeid"
+          required="required"
+          name="nome"
+        /><br /><br />
+        <label for="email">E-mail:</label>
+        <input
+          type="email"
+          id="emailid"
+          required="required"
+          name="nome"
+        /><br /><br />
+
+        <label for="mensagem">Mensagem</label><br />
+        <textarea name="mensagem" id="msg" cols="30" rows="10"></textarea
+        ><br /><br />
+
+        <div>
+          <input type="checkbox" id="aceitar" name="interesse" />
+          <label for="aceitar"> Aceito receber novidades por e-mail </label>
+        </div>
+        <br />
+
+        <input
+          type="submit"
+          class="enviar"
+          onclick="Enviar();"
+          value="Enviar"
+        />
+      </fieldset>
+    </form>
+  </body>
+</html>
